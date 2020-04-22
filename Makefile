@@ -103,7 +103,7 @@ create_or_update_travis_webhook:
 	  "${TRIGGER_PROVIDER_BUILD_URL}" \
 	  --header "Content-Type: application/json" "Accept: application/json" "Travis-API-Version: 3" 'Authorization: token $${user.travisToken}' \
 	  --request POST \
-	  --data @${PWD}/pactflow/travis-ci-webhook.json \
+	  --data @${PWD}/haylingsailor/travis-ci-webhook.json \
 	  --uuid ${WEBHOOK_UUID} \
 	  --provider ${PACTICIPANT} \
 	  --contract-content-changed \
